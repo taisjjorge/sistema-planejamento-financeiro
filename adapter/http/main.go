@@ -8,7 +8,7 @@ import (
 )
 
 // Init ...
-func Init(){
+func Init() {
 	http.HandleFunc("/transactions", transaction.GetTransactions)
 	http.HandleFunc("/transaction", transaction.CreateATransaction)
 
